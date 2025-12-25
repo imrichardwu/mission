@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://daq2lelql6c43"]
+[gd_scene load_steps=11 format=4 uid="uid://daq2lelql6c43"]
 
 [ext_resource type="PackedScene" uid="uid://d06vmnu11dwma" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://dwoxlo4fdraop" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://crtsx80tq3akt" path="res://scenes/plaform.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://egiyr2bivnvy" path="res://scenes/coin.tscn" id="4_lbhrr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 
@@ -239,3 +240,12 @@ libraries = {
 &"": SubResource("AnimationLibrary_iywne")
 }
 autoplay = "move"
+
+[node name="Coin" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(54, 60)
+
+[node name="Coin2" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(141, 59)
+
+[node name="Coin3" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(208, 58)
